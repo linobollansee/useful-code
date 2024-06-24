@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Example of using the length filter -->
+    {{ my_list|length }} <!-- Returns the length of the list -->
+
+    <!-- Example of using the lower filter -->
+    {{ my_string|lower }} <!-- Converts the string to lowercase -->
+
+    <!-- Example of using the upper filter -->
+    {{ my_string|upper }} <!-- Converts the string to uppercase -->
+
+    <!-- Example of using the title filter -->
+    {{ my_string|title }} <!-- Converts the string to title case -->
+
+    <!-- Example of using the capfirst filter -->
+    {{ my_string|capfirst }} <!-- Capitalizes the first character of the string -->
+
+    <!-- Example of using the default filter -->
+    {{ my_variable|default:"Default Value" }} <!-- Uses the given default value if the variable is not present -->
+
+    <!-- Example of using the default_if_none filter -->
+    {{ my_variable|default_if_none:"Default Value" }} <!-- Uses the given default value if the variable is None -->
+
+    <!-- Example of using the join filter -->
+    {{ my_list|join:", " }} <!-- Joins a list into a string with the given separator -->
+
+    <!-- Example of using the date filter -->
+    {{ my_date|date:"D d M Y" }} <!-- Formats a date according to the given format -->
+
+    <!-- Example of using the time filter -->
+    {{ my_time|time:"H:i" }} <!-- Formats a time according to the given format -->
+
+    <!-- Example of using the timesince filter -->
+    {{ my_date|timesince }} <!-- Returns the time since the given date -->
+
+    <!-- Example of using the timeuntil filter -->
+    {{ my_date|timeuntil }} <!-- Returns the time until the given date -->
+
+    <!-- Example of using the filesizeformat filter -->
+    {{ my_file.size|filesizeformat }} <!-- Formats a number of bytes as a human-readable file size -->
+
+    <!-- Example of using the pluralize filter -->
+    {{ my_count|pluralize:"item,items" }} <!-- Returns the appropriate form of a word based on the count -->
+
+    <!-- Example of using the truncatechars filter -->
+    {{ my_string|truncatechars:20 }} <!-- Truncates the string to 20 characters -->
+
+    <!-- Example of using the truncatewords filter -->
+    {{ my_string|truncatewords:5 }} <!-- Truncates the string to 5 words -->
+
+    <!-- Example of using the wordcount filter -->
+    {{ my_string|wordcount }} <!-- Returns the number of words in the string -->
+
+    <!-- Example of using the linebreaks filter -->
+    {{ my_string|linebreaks }} <!-- Converts line breaks into <p> and <br> tags -->
+
+    <!-- Example of using the striptags filter -->
+    {{ my_string|striptags }} <!-- Strips all HTML tags from the string -->
+
+    <!-- Example of using the safe filter -->
+    {{ my_string|safe }} <!-- Marks the string as safe (prevents escaping) -->
+
+    <!-- Example of using the escape filter -->
+    {{ my_string|escape }} <!-- Escapes HTML characters in the string -->
+
+    <!-- Example of using the urlize filter -->
+    {{ my_string|urlize }} <!-- Converts URLs in the string into clickable links -->
+
+    <!-- Example of using the slice filter -->
+    {{ my_list|slice:":5" }} <!-- Slices the list to the first 5 elements -->
+
+    <!-- Example of using the divisibleby filter -->
+    {{ my_number|divisibleby:3 }} <!-- Checks if the number is divisible by 3 -->
+
+    <!-- Example of using the yesno filter -->
+    {{ my_boolean|yesno:"yes,no,maybe" }} <!-- Returns one of the values based on the boolean value -->
+
+{% endblock %}
